@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Aesthetic Latifah</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(120deg, #ffd6e8, #ffeac9, #d6eaff);
+            background-size: 300% 300%;
+            animation: bgMove 10s infinite alternate ease-in-out;
+        }
+
+        @keyframes bgMove {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        /* Section */
+        #profil {
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        /* Title */
+        h1 {
+            font-size: 48px;
+            font-family: "Nunito", sans-serif;
+            color: #ff5fa2;
+            text-shadow: 0 4px 15px rgba(255, 90, 160, 0.4);
+            margin-bottom: 20px;
+        }
+
+        .subtext {
+            font-size: 18px;
+            opacity: 0.9;
+            max-width: 760px;
+            margin: auto;
+        }
+
+        /* Container */
+        .profile-wrapper {
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Photo Frame */
+        .photo-box {
+            width: 260px;
+            height: 260px;
+            background: linear-gradient(140deg, #ffa7c8, #ffe5f1, #ffd6a5);
+            border-radius: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            padding: 10px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+            100% { transform: translateY(0); }
+        }
+
+        .photo-box img {
+            width: 100%;
+            height: 100%;
+            border-radius: 25px;
+            object-fit: cover;
+        }
+
+        /* Info Box */
+        .info-card {
+            max-width: 450px;
+            background: rgba(255,255,255,0.7);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            text-align: left;
+            border-left: 6px solid #ff7ab8;
+            animation: fadeIn 1s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .info-card h2 {
+            font-size: 28px;
+            color: #ff4e9b;
+            margin-bottom: 15px;
+        }
+
+        .info-card p {
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        /* Cute Tags */
+        .tags {
+            margin-top: 20px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #ffb3d9;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin: 6px;
+            color: #fff;
+            box-shadow: 0 4px 10px rgba(255, 100, 170, 0.4);
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+<section id="profil">
+
+    <h1>🌸 Kepribadian Saya🌸</h1>
+    <p class="subtext">
+        Halo! Saya <b>Latifah Tussarfiyah</b> ✨<br>
+        Seorang mahasiswi yang hobi banget bikin hal-hal aesthetic, web design, coding lucu,
+        dan hal-hal kreatif lainnya. Aku suka mempelajari hal baru dan mencoba
+        membuat karya yang indah & bermanfaat, yaa mungkin saya tidak terlalu bisa tentang hal ini
+         setidaknya ada usaha yang selalu saya bangkitkan  💖
+    </p>
+
+
+    <div class="profile-wrapper">
+
+        <!-- Photo (User will upload later) -->
+        <div class="photo-box">
+            <img src="pto ke 2.jpg" alt="Foto Profil">
+        </div>
+
+        <!-- Info Card -->
+        <div class="info-card">
+            <h2>✨ Tentang Saya</h2>
+            <p>
+                Nama: <b>Latifah Tussarfiyah</b><br>
+                Asal: Banten, Indonesia<br>
+                Status: Mahasiswi di POliteknik PGRI Banten<br>
+                Minat: Desain Web, Editing, UI/UX, Coding aesthetic<br><br>
+                Aku selalu berusaha untuk menciptakan proyek yang bukan hanya bagus,
+                tapi juga punya vibes lucu, lembut, dan nyaman dilihat 🌷
+            </p>
+
+            <div class="tags">
+                <span class="tag">Creative</span>
+                <span class="tag">UI/UX</span>
+                <span class="tag">Web Designer</span>
+                <span class="tag">Sweet Style</span>
+                
+            </div>
+            <a href="index.html" class="back-btn">🔙 Kembali ke Beranda</a>
+        </div>
+
+
+    </div>
+
+</section>
+</body>
+</html>

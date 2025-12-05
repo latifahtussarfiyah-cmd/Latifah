@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Web Latifah Tussarfiyah</title>
+
+<!-- Font Awesome for social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  /* Reset */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body, html {
+    height: 100%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  /* Background */
+  body {
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    color: white;
+  }
+
+  /* Dark overlay for background */
+  body::before {
+    content: "";
+    position: fixed;
+    top:0;left:0;right:0;bottom:0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+  }
+
+  /* Navbar */
+  nav {
+    width: 100%;
+    background: rgba(255 255 255 / 0.1);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 600;
+    z-index: 10;
+    backdrop-filter: saturate(180%) blur(10px);
+    transition: background 0.3s ease;
+  }
+  nav:hover {
+    background: rgba(255 255 255 / 0.3);
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 35px;
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+  }
+  nav a:hover,
+  nav a.active {
+    color: #4da6ff;
+  }
+  nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #4da6ff;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0; left: 0;
+  }
+  nav a:hover::after, nav a.active::after {
+    width: 100%;
+  }
+
+  /* Main Container */
+  main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 20px 80px 20px;
+    text-align: center;
+  }
+
+  /* Profile Image with oval shape and border */
+  .profile-img {
+    width: 280px; height: 280px;
+    object-fit: cover;
+    border-radius: 50% / 60%;
+    border: 5px solid white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    margin-bottom: 25px;
+    transition: transform 0.3s ease;
+  }
+  .profile-img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Heading */
+  h2 {
+    color: #4da6ff;
+    font-size: 28px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.75);
+  }
+  h1 {
+    font-size: 42px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.8);
+  }
+
+  /* Social Icons */
+  .social-icons {
+    margin-top: 30px;
+  }
+  .social-icons a {
+    display: inline-block;
+    background-color: #4da6ff;
+    width: 42px;
+    height: 42px;
+    color: white;
+    line-height: 42px;
+    border-radius: 50%;
+    margin: 0 10px;
+    font-size: 18px;
+    box-shadow: 0 3px 10px rgba(77, 166, 255, 0.6);
+    transition: background-color 0.4s ease, transform 0.3s ease;
+  }
+  .social-icons a:hover {
+    background-color: #1a8cff;
+    transform: translateY(-3px);
+    text-decoration: none;
+  }
+
+  /* Responsive */
+  @media (max-width:600px){
+    .profile-img {
+      width: 180px;
+      height: 180px;
+    }
+    h1 {
+      font-size: 28px;
+    }
+    h2 {
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+    nav {
+      padding: 10px 20px;
+      justify-content: center;
+    }
+    nav a {
+      margin-left: 18px;
+      font-size: 14px;
+    }
+    .back-btn {
+  margin-top: 40px;
+  display: inline-block;
+  padding: 12px 28px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border: 2px solid #4da6ff;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  backdrop-filter: blur(6px);
+  transition: 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.back-btn:hover {
+  background: #4da6ff;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(77,166,255,0.8);
+}
+
+  }
+
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Index</a>
+  <a href="profile.html">Profile</a>
+  <a href="layanan.html">Layanan</a>
+  <a href="kontak.html">Kontak</a>
+  
+  
+</nav>
+
+<main>
+  <img src="pto ke 1.jpg" alt="Foto Latifah" class="profile-img" />
+  <h2>SELAMAT DATANG</h2>
+  <h1>DI WEB LATIFAH TUSSARFIYAH</h1>
+
+  <div class="social-icons">
+    <a href="#" title="Facebook" aria-label="Facebook" class="fa fa-facebook"></a>
+    <a href="#" title="Google Plus" aria-label="Google Plus" class="fa fa-google-plus"></a>
+    <a href="#" title="Twitter" aria-label="Twitter" class="fa fa-twitter"></a>
+    <a href="#" title="Dribbble" aria-label="Dribbble" class="fa fa-dribbble"></a>
+    <a href="#" title="Github" aria-label="Github" class="fa fa-github"></a>
+    <a href="#" title="Behance" aria-label="Behance" class="fa fa-behance"></a>
+  </div>
+</main>
+
+<!-- Note: For full site, you can add detail profile, layanan, kontak sections below with smooth scroll script -->
+
+<script>
+  // Scroll and active link highlight
+  const links = document.querySelectorAll('nav a');
+  links.forEach(link => {
+    link.addEventListener('click',e=>{
+      links.forEach(l=>l.classList.remove('active'));
+      e.target.classList.add('active');
+    });
+  });
+
+  // Default active menu
+  links[0].classList.add('active');
+</script>
+
+</body>
+</html>
+</body>
+</html>

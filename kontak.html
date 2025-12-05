@@ -1,0 +1,140 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body style="margin:0; font-family:'Poppins', sans-serif;">
+
+<!-- KONTAK -->
+<section id="kontak" style="
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #ffe6f7, #e9e3ff, #dff5ff, #fff6d6);
+  color: #2c2c2c;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+">
+
+  <!-- Dekorasi pastel -->
+  <div style="position:absolute; top:40px; left:40px; font-size:55px; opacity:0.7;">✨</div>
+  <div style="position:absolute; bottom:40px; right:40px; font-size:60px; opacity:0.7;">🌸</div>
+
+  <h1 style="
+    font-size: 45px;
+    margin-bottom: 25px;
+    color: #ff62b8;
+    text-shadow: 0 0 12px rgba(255,100,180,0.6);
+    letter-spacing: 2px;
+    font-weight: 700;
+  ">
+    KONTAK
+  </h1>
+
+  <p style="
+    font-size: 19px;
+    max-width: 760px;
+    margin: 0 auto 45px auto;
+    line-height: 1.9;
+    opacity: 0.95;
+    color:#444;
+  ">
+    Jika Anda ingin menghubungi saya untuk kerja sama, pertanyaan, atau kebutuhan lainnya,
+    silakan isi form di bawah ini atau hubungi melalui kontak sosial yang tersedia.
+  </p>
+
+  <!-- Contact Form -->
+  <form action="#" method="post" style="
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.35);
+    border-radius: 22px;
+    border: 3px dashed #ffb6e1;
+    box-shadow: 0 10px 25px rgba(255,150,200,0.4);
+    backdrop-filter: blur(10px);
+    text-align: left;
+    animation: fadeIn 1s ease forwards;
+  ">
+
+    <label style="font-weight:600; color:#d63384;">Nama Lengkap</label>
+    <input type="text" placeholder="Masukkan nama Anda" required style="
+      width: 100%;
+      padding: 13px;
+      margin: 10px 0 22px 0;
+      border-radius: 12px;
+      border: 2px solid #ffc7e9;
+      outline: none;
+      font-size: 16px;
+      background: rgba(255,255,255,0.9);
+      transition:0.3s;
+    " onfocus="this.style.borderColor='#ff8ccf'">
+
+    <label style="font-weight:600; color:#6a5acd;">Email</label>
+    <input type="email" placeholder="example@gmail.com" required style="
+      width: 100%;
+      padding: 13px;
+      margin: 10px 0 22px 0;
+      border-radius: 12px;
+      border: 2px solid #d7caff;
+      outline: none;
+      font-size: 16px;
+      background: rgba(255,255,255,0.9);
+      transition:0.3s;
+    " onfocus="this.style.borderColor='#b39aff'">
+
+    <label style="font-weight:600; color:#ff9f2e;">Pesan</label>
+    <textarea rows="5" placeholder="Tulis pesan Anda..." required style="
+      width: 100%;
+      padding: 13px;
+      margin: 10px 0 28px 0;
+      border-radius: 12px;
+      border: 2px solid #ffe4a0;
+      outline: none;
+      font-size: 16px;
+      resize: none;
+      background: rgba(255,255,255,0.9);
+      transition:0.3s;
+    " onfocus="this.style.borderColor='#ffcf54'"></textarea>
+
+    <button type="submit" style="
+      width: 100%;
+      padding: 15px;
+      background: linear-gradient(to right, #ff6ecf, #ff95b8);
+      border: none;
+      border-radius: 15px;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      font-weight: 700;
+      letter-spacing: 1px;
+      box-shadow: 0 6px 18px rgba(255,120,180,0.6);
+      transition: 0.3s;
+    "
+    onmouseover="this.style.transform='scale(1.05)'"
+    onmouseout="this.style.transform='scale(1)'">
+      Kirim Pesan 💌
+    </button>
+
+  </form>
+    </div>
+            <a href="index.html" class="back-btn">🔙 Kembali ke Beranda</a>
+        </div>
+</section>
+
+<!-- Animation -->
+<style>
+@keyframes fadeIn {
+  from { opacity:0; transform: translateY(20px); }
+  to { opacity:1; transform: translateY(0); }
+}
+</style>
+
+</body>
+</html>
